@@ -1,4 +1,4 @@
-## Name Reserver for [LostMinions](https://github.com/LostMinions/)
+## Name Reserved for [LostMinions](https://github.com/LostMinions/)
 
 <!--
 
