@@ -6,7 +6,7 @@
   { "name": "automation",    "color": "7FCEFF", "description": "Scripts, actions, build pipeline, CI." },
   { "name": "blueprints",    "color": "0096FF", "description": "BP scripting / logic tasks." },
   { "name": "design",        "color": "6F42C1", "description": "Game design, tuning, mechanic work." },
-  { "name": "editor-tools",  "color": "67C23A", "description": "In-editor utilities, debug tools." }
+  { "name": "editor-tools",  "color": "67C23A", "description": "In-editor utilities, debug tools." },
   { "name": "level-design",  "color": "0E5DF0", "description": "Level work, lighting, blockouts." },
   { "name": "tech-art",      "color": "8E44AD", "description": "Materials, shaders, FX, rigs." },
   { "name": "unreal",        "color": "0052CC", "description": "Engine-level tasks, plugins, C++ modules." },
