@@ -1,0 +1,26 @@
+[
+  /* ============================================================
+     LOST MINIONS GAMES — CUSTOM LABELS
+     ============================================================ */
+  { "name": "art",           "color": "1F6FEB", "description": "Concepts, 3D assets, animation, UI." },
+  { "name": "automation",    "color": "7FCEFF", "description": "Scripts, actions, build pipeline, CI." },
+  { "name": "blueprints",    "color": "0096FF", "description": "BP scripting / logic tasks." },
+  { "name": "design",        "color": "6F42C1", "description": "Game design, tuning, mechanic work." },
+  { "name": "editor-tools",  "color": "67C23A", "description": "In-editor utilities, debug tools." }
+  { "name": "level-design",  "color": "0E5DF0", "description": "Level work, lighting, blockouts." },
+  { "name": "tech-art",      "color": "8E44AD", "description": "Materials, shaders, FX, rigs." },
+  { "name": "unreal",        "color": "0052CC", "description": "Engine-level tasks, plugins, C++ modules." },
+
+  /* ============================================================
+     DEFAULT GITHUB LABELS (STANDARDIZED)
+     ============================================================ */
+  { "name": "bug", "color": "D73A4A", "description": "Something isn't working." },
+  { "name": "documentation", "color": "0366D6", "description": "Improvements or additions to documentation." },
+  { "name": "duplicate", "color": "D4C5F9", "description": "This issue or pull request already exists." },
+  { "name": "enhancement", "color": "A2EEEF", "description": "New feature or request." },
+  { "name": "good first issue", "color": "7057FF", "description": "Good for newcomers." },
+  { "name": "help wanted", "color": "008672", "description": "Extra attention is needed." },
+  { "name": "invalid", "color": "E4E669", "description": "This doesn't seem right." },
+  { "name": "question", "color": "D876E3", "description": "Further information is requested." },
+  { "name": "wontfix", "color": "FFFFFF", "description": "This will not be worked on." },
+]

@@ -1,0 +1,108 @@
+name: "Setup .NET and NuGet for LostMinions"
+description: "Sets up .NET SDK, configures local LostMinions package bundle (if available), and falls back to GitHub Packages feed."
+
+inputs:
+  dotnet-version:
+    description: "SDK version to install"
+    default: "8.0.x"
+  gh-token:
+    description: "GitHub token for NuGet feed authentication"
+    required: true
+  owner:
+    description: "Repository owner (org)"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    # ------------------------------------------------------------
+    # 🧰 Setup .NET SDK
+    # ------------------------------------------------------------
+    - name: 🧰 Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ inputs.dotnet-version }}
+
+    # ------------------------------------------------------------
+    # 📦 Download or Reuse Global LostMinions.Packages Bundle
+    # ------------------------------------------------------------
+    - name: 📥 Prepare Global LostMinions.Packages Bundle
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh-token }}
+      run: |
+        echo "📦 Checking for latest LostMinions.Packages bundle..."
+        GLOBAL_DIR="/opt/lostminions/local-packages"
+        mkdir -p "$GLOBAL_DIR" || true
+
+        api_response=$(curl -fsSL \
+          -H "Authorization: token $GH_TOKEN" \
+          -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/LostMinions/LostMinions.Packages/releases/latest)
+
+        asset_api_url=$(echo "$api_response" | jq -r '.assets[] | select(.name | endswith(".zip")) | .url' | head -n 1)
+        latest_tag=$(echo "$api_response" | jq -r '.tag_name')
+
+        if [[ -d "$GLOBAL_DIR" && -f "$GLOBAL_DIR/.version" && "$(cat "$GLOBAL_DIR/.version")" == "$latest_tag" ]]; then
+          echo "✅ Global bundle already up-to-date ($latest_tag)."
+        else
+          echo "⬇️ Downloading bundle for version $latest_tag..."
+          if curl -L \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/octet-stream" \
+            -o "$GLOBAL_DIR/LostMinions.Packages.zip" \
+            "$asset_api_url"; then
+            unzip -oq "$GLOBAL_DIR/LostMinions.Packages.zip" -d "$GLOBAL_DIR"
+            echo "$latest_tag" > "$GLOBAL_DIR/.version"
+            echo "✅ Extracted to $GLOBAL_DIR"
+          else
+            echo "⚠️ Failed to download global bundle. Will fall back to GitHub feed."
+          fi
+        fi
+
+        # Record usable source
+        if [[ -d "$GLOBAL_DIR" ]]; then
+          echo "$GLOBAL_DIR" > .nuget-local-source
+        fi
+
+    # ------------------------------------------------------------
+    # 🔐 Configure NuGet sources
+    # ------------------------------------------------------------
+    - name: 🔐 Configure NuGet feed
+      shell: bash
+      run: |
+        echo "🔧 Configuring NuGet sources..."
+        FEED_URL="https://nuget.pkg.github.com/${{ inputs.owner }}/index.json"
+
+        dotnet nuget remove source github --force >/dev/null 2>&1 || true
+        dotnet nuget remove source local-packages --force >/dev/null 2>&1 || true
+
+        if [ -f ".nuget-local-source" ] && [ -d "$(cat .nuget-local-source)" ]; then
+          LOCAL_DIR="$(cat .nuget-local-source)"
+          echo "📦 Using local package bundle: $LOCAL_DIR"
+          dotnet nuget add source "$LOCAL_DIR" --name "local-packages" >/dev/null 2>&1 || \
+            echo "⚠️ Failed to add local-packages source (non-fatal)."
+        fi
+
+        dotnet nuget add source "$FEED_URL" \
+          --name "github" \
+          --username "TheKrush" \
+          --password "${{ inputs.gh-token }}" \
+          --store-password-in-clear-text >/dev/null 2>&1 || \
+          echo "⚠️ Failed to add GitHub source (non-fatal)."
+
+        echo "✅ NuGet sources refreshed cleanly."
+
+    # ------------------------------------------------------------
+    # 💾 Cache NuGet packages (safe for both self-hosted and GitHub)
+    # ------------------------------------------------------------
+    - name: 💾 Cache NuGet packages
+      uses: actions/cache@v4
+      with:
+        # 💡 Safe inside workspace, avoids tar relative path issues
+        path: |
+          .nuget/packages
+          .nuget/v3-cache
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
