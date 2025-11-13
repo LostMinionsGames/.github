@@ -1,17 +1,20 @@
 name: ⚙️ Task / Maintenance
-description: Routine work, cleanup, or automation improvements.
+description: Routine work, refactoring, cleanup, optimization, or project maintenance.
 labels: [task]
+
 body:
   - type: input
     id: repo
     attributes:
       label: Repository
-      placeholder: e.g. LostMinions_Libraries
+      placeholder: e.g. Glitch
+
   - type: textarea
     id: description
     attributes:
       label: Task Description
-      placeholder: What needs to be done or maintained?
+      placeholder: What needs to be cleaned up, optimized, refactored, or updated?
+
   - type: dropdown
     id: priority
     attributes:
