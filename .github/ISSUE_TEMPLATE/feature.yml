@@ -3,12 +3,6 @@ description: Suggest a new game feature, mechanic, system, or improvement.
 labels: [enhancement]
 
 body:
-  - type: input
-    id: repo
-    attributes:
-      label: Target Repository
-      placeholder: e.g. Glitch
-
   - type: textarea
     id: summary
     attributes:
