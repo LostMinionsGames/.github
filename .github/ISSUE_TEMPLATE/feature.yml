@@ -1,29 +1,39 @@
 name: 🌟 Feature Request
-description: Suggest a new idea, improvement, or feature.
+description: Suggest a new game feature, mechanic, system, or improvement.
 labels: [enhancement]
+
 body:
   - type: input
     id: repo
     attributes:
       label: Target Repository
-      placeholder: e.g. LostMinions.org, LostMinions_Libraries
+      placeholder: e.g. Glitch
+
   - type: textarea
     id: summary
     attributes:
       label: Summary
-      description: Briefly describe the feature or improvement.
+      description: Brief overview of the feature or improvement you’re proposing.
+      placeholder: High-level summary of the idea.
+
   - type: textarea
     id: details
     attributes:
       label: Details
-      description: How should it work? Why is it useful?
+      description: How should it work? Why is it useful? Any specific requirements or constraints?
+      placeholder: Expand on the idea with mechanics, flow, or intended behavior.
+
   - type: dropdown
     id: category
     attributes:
       label: Category
       options:
-        - Website / UI
-        - Automation / Tooling
-        - 3D Print / Model Design
-        - Game Integration
+        - Gameplay / Mechanics
+        - Systems / Architecture
+        - Level Design
+        - UI / UX
+        - Tools / Editor Utilities
+        - Tech Art / Materials / FX
+        - Audio
+        - AI / Behavior
         - Other
