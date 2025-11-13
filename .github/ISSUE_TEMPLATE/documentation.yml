@@ -3,12 +3,6 @@ description: Suggest updates or additions to project documentation, development 
 labels: [documentation]
 
 body:
-  - type: input
-    id: repo
-    attributes:
-      label: Repository
-      placeholder: e.g. Glitch
-
   - type: textarea
     id: content
     attributes:
