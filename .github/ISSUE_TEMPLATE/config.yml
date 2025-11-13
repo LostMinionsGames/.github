@@ -1,8 +1,6 @@
 blank_issues_enabled: false
+
 contact_links:
-  - name: 💬 General Questions
-    url: https://github.com/LostMinions/discussions
-    about: Ask questions or start an open discussion.
-  - name: 🧵 Shop Support
-    url: https://www.etsy.com/shop/LostMinions
-    about: For questions about prints, orders, or commissions.
+  - name: 💬 General Questions & Discussion
+    url: https://github.com/orgs/LostMinionsGames/discussions
+    about: Ask questions, propose ideas, or start an open conversation about any Lost Minions Games project.
