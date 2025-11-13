@@ -3,12 +3,6 @@ description: Routine work, refactoring, cleanup, optimization, or project mainte
 labels: [task]
 
 body:
-  - type: input
-    id: repo
-    attributes:
-      label: Repository
-      placeholder: e.g. Glitch
-
   - type: textarea
     id: description
     attributes:
