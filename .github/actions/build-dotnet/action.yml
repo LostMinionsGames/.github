@@ -9,6 +9,8 @@ inputs:
     default: "Release"
   verbosity:
     default: "minimal"
+  gh-token:
+    required: true
 
 outputs:
   project:
@@ -17,6 +19,17 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - name: 🔑 Export GitHub Token
+      shell: bash
+      run: |
+        if [ -n "${{ inputs.gh-token }}" ]; then
+          echo "Setting GH_TOKEN and GITHUB_TOKEN from input..."
+          echo "GH_TOKEN=${{ inputs.gh-token }}" >> "$GITHUB_ENV"
+          echo "GITHUB_TOKEN=${{ inputs.gh-token }}" >> "$GITHUB_ENV"
+        else
+          echo "No gh-token input provided, leaving existing GH_TOKEN/GITHUB_TOKEN unchanged."
+        fi
+
     - id: detect
       shell: bash
       run: |
