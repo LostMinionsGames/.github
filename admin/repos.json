@@ -3,7 +3,7 @@
     /* ============================================================
        CORE ADMIN & ACTIVE PROJECTS
        ============================================================ */
-    { "org": "LostMinions", "name": ".github", "enabled": false, "description": "Admin repo for templates, actions, and automation" },
+    { "org": "LostMinionsGames", "name": ".github", "enabled": false, "description": "Admin repo for templates, actions, and automation" },
     { "org": "LostMinionsGames", "name": "Glitch", "enabled": true, "description": "Primary gameplay prototype" },
   ]
 }
