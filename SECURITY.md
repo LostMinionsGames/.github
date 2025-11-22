@@ -15,11 +15,11 @@
 If you discover a vulnerability, please **do not open a public issue**.
 
 Instead, report privately through **GitHub Security Advisories** or email: 
-**security@lostminions.com**
+**security@lostminions.org**
 
 We will:
 - Acknowledge your report within **72 hours** 
 - Provide a status update or request for clarification within **7 days** 
 - Credit responsible disclosures in release notes (if desired)
 
-Thank you for helping keep The Portal Realm safe for everyone.
+Thank you for helping keep Lost Minions Games safe for everyone.
