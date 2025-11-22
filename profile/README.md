@@ -1,21 +1,26 @@
-# 🧩 Lost Minions
+# 🎮 Lost Minions Games
 
-> **Makers. Gamers. Coders. 3D Dreamers.**  
-> *Where creativity goes rogue.*
+> **Indie worlds, weird mechanics, and joyful bugs.**  
+> *Where game ideas escape the lab.*
 
 ---
 
 ### 🧠 What We Do
-Lost Minions is a collective of builders turning imagination into code, prints, and pixels.  
-We host everything from gaming tools and web apps to D&D resources and 3D-print designs —  
-each project is an experiment in curiosity and controlled chaos.
+Lost Minions Games is the home for our experiments in interactive worlds.  
+From early prototypes to full projects, this org houses the code behind our:
+
+- Single-player and co-op game ideas  
+- Systems tests and gameplay sandboxes  
+- Reusable game dev tooling and pipelines  
+
+Every repo here is an experiment in curiosity, iteration, and controlled chaos.
 
 ---
 
 ### 🌐 Community Links
 
 #### 💬 Discord
-Join the lab and scheme with other minions:  
+Hang out with other minions, playtest, and talk shop:  
 🔗 https://lostminions.org/discord
 
 #### 📱 Social Media
@@ -27,33 +32,42 @@ Join the lab and scheme with other minions:
 | 📸 **Instagram** | [instagram.com/lostminions](https://www.instagram.com/lostminions/) |
 | 👾 **Reddit** | [reddit.com/r/LostMinions](https://www.reddit.com/r/LostMinions) |
 | 🎥 **TikTok** | [tiktok.com/@lostminions](https://www.tiktok.com/@lostminions) |
-| 🧪 **Twitch**  | [twitch.tv/lostminions](https://www.twitch.tv/lostminions) |
+| 🧪 **Twitch** | [twitch.tv/lostminions](https://www.twitch.tv/lostminions) |
 | 🐦 **Twitter / X** | [twitter.com/LostMinions](https://twitter.com/LostMinions) |
 | ▶️ **YouTube** | [youtube.com/@LostMinions](https://www.youtube.com/@LostMinions) |
 
 ---
 
-### 💎 Support the Lab
-Help keep the experiments running and the minions building:  
+### 💎 Support the Games
+Help keep the prototypes running and new worlds in development:  
 ❤️ [Patreon.com/LostMinions](https://www.patreon.com/LostMinions)
 
 ---
 
-### 💬 About the Organization
-This GitHub organization hosts all official **Lost Minions** codebases —  
-websites, bots, tools, and creative assets powering the Lost Minions network.
+### 💬 About This Organization
+This GitHub organization hosts all official **Lost Minions Games** codebases —  
+including core game projects, shared gameplay systems, and supporting dev tools.
 
 You’ll find:
 
-- 🕹️ Game prototypes and tools  
-- 🤖 Bots and automation  
-- 🧙 D&D and tabletop resources  
-- 🧱 3D-printable designs and utilities  
+- 🕹️ Game prototypes and vertical slices  
+- 🧱 Shared gameplay frameworks and components  
+- 🧰 Build, testing, and automation tooling  
+- 🎨 Game-adjacent utilities for art, data, and pipelines  
 - 🧪 Odd experiments that went a little too far (on purpose)
 
-Whether it’s PHP, C#, or pure chaos, every repo here shares one mission:  
-**build something weird, make it work, and have fun doing it.**
+Whether it’s Unreal, C#, or pure chaos, every repo here shares one mission:  
+**build something weird, make it playable, and learn from it.**
 
 ---
 
-> 👾 *“Lost but not forgotten.”*
+### 🔗 Related Organizations
+
+- 🧩 **Lost Minions (main org):** brand, bots, tools, and 3D designs  
+  - https://github.com/LostMinions  
+- 🌌 **The Portal Realm:** multiversal D&D campaigns, lore, and tooling  
+  - https://github.com/ThePortalRealm  
+
+---
+
+> 👾 *“Lost but not forgotten — just respawning in another build.”*
