@@ -1,34 +1,37 @@
-# Contributing to Lost Minions Games
+# Contributing to Lost Minions
 
-Thank you for helping expand **Lost Minions Games**!
-This organization maintains game-focused projects and shared automation, currently centered around the **Glitch** project and its supporting `.github` admin repo.
+Thank you for helping expand **Lost Minions**!
+This organization maintains creative, web, and technical projects across multiple repos.
 
 ---
 
 ## 🧭 Where to Start
 
-- **Ideas / feedback:** open a [discussion](../../discussions) before large or breaking changes.
-- **Game / Glitch feature ideas:** open an issue describing the feature, UX impact, and any technical notes.
+- **Ideas / feedback:** open a [discussion](../../discussions) before large changes.
+- **3D print or design updates:** open an issue describing materials and model type.
 - **Code or automation tools:** create an issue, then link it in your pull request.
-- **Org-wide workflows / labels:** propose changes in the `.github` repo with a clear description of the impact.
+- **Websites or forums:** follow each repo’s README instructions.
 
 ---
 
 ## 🧱 Repository Clusters
 
 | Area | Repository | Description |
-|------|-----------|-------------|
-| 🧰 `.github` | Org admin repo for shared templates, labels, workflows, and sync scripts for **LostMinionsGames** |
-| 🕹️ `Glitch` | Unreal Engine game project exploring “glitch” mechanics and player attention |
+|------|-------------|-------------|
+| 🧰 `.github` | Shared templates, labels, and workflows |
+| 🌐 `LostMinions.org` | Main site & clan hub |
+| ⚙️ `LostMinions_Libraries` | Shared C# utilities |
+| 🧵 `LostMinions.org-3DPrint` | 3D printing assets |
+| 🕹️ `DarkfallInfo.com` | Legacy MMO tools |
 
 ---
 
 ## 📝 Submitting Changes
 
 1. **Fork** or branch from `main`.
-2. **Commit** in logical chunks with clear, descriptive messages.
-3. **Open a Pull Request** linked to an issue or discussion.
-4. Keep feedback constructive and professional; design disagreements are fine, personal attacks are not.
+2. **Commit** in logical chunks with clear messages.
+3. **Open a Pull Request** linked to an issue or template.
+4. Keep feedback constructive and professional.
 
 ---
 
@@ -43,11 +46,9 @@ All contributors must follow the [Lost Minions Code of Conduct](./CODE_OF_CONDUC
 Report privately via [GitHub Security Advisories](../../security/advisories) or email
 **security@lostminions.org**
 
-Please avoid filing public issues for sensitive vulnerabilities.
-
 ---
 
 ## 💡 Need Help?
 
-Open a **“Question”** issue or start a **discussion** in this org.
+Open a **“Question”** issue or reach out through our community channels.
 We’re always happy to help new minions find their footing.
