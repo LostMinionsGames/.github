@@ -6,7 +6,7 @@
 ---
 
 ### 🧠 What We Do
-Lost Minions Games is the home for our experiments in interactive worlds.  
+Lost Minions Games is the home for our experiments in interactive worlds. 
 From early prototypes to full projects, this org houses the code behind our:
 
 - Single-player and co-op game ideas  
@@ -20,7 +20,7 @@ Every repo here is an experiment in curiosity, iteration, and controlled chaos.
 ### 🌐 Community Links
 
 #### 💬 Discord
-Hang out with other minions, playtest, and talk shop:  
+Hang out with other minions, playtest, and talk shop: 
 🔗 https://lostminions.org/discord
 
 #### 📱 Social Media
@@ -39,13 +39,13 @@ Hang out with other minions, playtest, and talk shop:
 ---
 
 ### 💎 Support the Games
-Help keep the prototypes running and new worlds in development:  
+Help keep the prototypes running and new worlds in development: 
 ❤️ [Patreon.com/LostMinions](https://www.patreon.com/LostMinions)
 
 ---
 
 ### 💬 About This Organization
-This GitHub organization hosts all official **Lost Minions Games** codebases —  
+This GitHub organization hosts all official **Lost Minions Games** codebases — 
 including core game projects, shared gameplay systems, and supporting dev tools.
 
 You’ll find:
@@ -56,7 +56,7 @@ You’ll find:
 - 🎨 Game-adjacent utilities for art, data, and pipelines  
 - 🧪 Odd experiments that went a little too far (on purpose)
 
-Whether it’s Unreal, C#, or pure chaos, every repo here shares one mission:  
+Whether it’s Unreal, C#, or pure chaos, every repo here shares one mission: 
 **build something weird, make it playable, and learn from it.**
 
 ---
