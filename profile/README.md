@@ -25,6 +25,8 @@ Hang out with other minions, playtest, and talk shop:
 
 #### 📱 Social Media
 
+- 🌲 [linktr.ee](https://linktr.ee/lostminions)
+
 | Platform | Link |
 |---------|------|
 | 🧵 **Etsy** | [etsy.com/shop/LostMinions](https://www.etsy.com/shop/LostMinions) |
@@ -35,8 +37,6 @@ Hang out with other minions, playtest, and talk shop:
 | 🧪 **Twitch** | [twitch.tv/lostminions](https://www.twitch.tv/lostminions) |
 | 🐦 **Twitter / X** | [twitter.com/LostMinions](https://twitter.com/LostMinions) |
 | ▶️ **YouTube** | [youtube.com/@LostMinions](https://www.youtube.com/@LostMinions) |
-
-- 🌲 [linktr.ee](https://linktr.ee/lostminions)
 
 ---
 
