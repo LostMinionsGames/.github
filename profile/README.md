@@ -36,7 +36,7 @@ Hang out with other minions, playtest, and talk shop:
 | 🐦 **Twitter / X** | [twitter.com/LostMinions](https://twitter.com/LostMinions) |
 | ▶️ **YouTube** | [youtube.com/@LostMinions](https://www.youtube.com/@LostMinions) |
 
-[linktr.ee](https://linktr.ee/lostminions)
+- 🌲 [linktr.ee](https://linktr.ee/lostminions)
 
 ---
 
