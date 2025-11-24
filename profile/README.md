@@ -6,6 +6,7 @@
 ---
 
 ### 🧠 What We Do
+
 Lost Minions Games is the home for our experiments in interactive worlds. 
 From early prototypes to full projects, this org houses the code behind our:
 
@@ -41,12 +42,14 @@ Hang out with other minions, playtest, and talk shop:
 ---
 
 ### 💎 Support the Games
+
 Help keep the prototypes running and new worlds in development: 
 ❤️ [Patreon.com/LostMinions](https://www.patreon.com/LostMinions)
 
 ---
 
 ### 💬 About This Organization
+
 This GitHub organization hosts all official **Lost Minions Games** codebases — 
 including core game projects, shared gameplay systems, and supporting dev tools.
 
