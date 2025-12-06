@@ -1,9 +1,21 @@
 {
   "repos": [
-    /* ============================================================
-       CORE ADMIN & ACTIVE PROJECTS
-       ============================================================ */
-    { "owner": "LostMinionsGames", "name": ".github", "enabled": false, "description": "Admin repo for templates, actions, and automation" },
-    { "owner": "LostMinionsGames", "name": "Glitch", "enabled": true, "description": "Primary gameplay prototype" },
+    /* ======================= CORE ADMIN & ACTIVE PROJECTS ======================= */
+    {
+      "owner": "LostMinionsGames",
+      "name": ".github",
+      "enabled": false,
+      "description": "Admin repo for templates, actions, and automation"
+    },
+    {
+      "owner": "LostMinionsGames",
+      "name": "Glitch",
+      "enabled": true,
+      "description": "Primary gameplay prototype",
+      "editor_files": [
+        ".editorconfig",
+        "CodeMaid.config"
+      ]
+    }
   ]
 }
