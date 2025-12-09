@@ -1,0 +1,19 @@
+name: ⚙️ Task / Maintenance
+description: Routine work, refactoring, cleanup, optimization, or project maintenance.
+labels: [task]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      placeholder: What needs to be cleaned up, optimized, refactored, or updated?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Normal
+        - High

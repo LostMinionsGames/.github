@@ -1,0 +1,33 @@
+name: 🌟 Feature Request
+description: Suggest a new game feature, mechanic, system, or improvement.
+labels: [enhancement]
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Brief overview of the feature or improvement you’re proposing.
+      placeholder: High-level summary of the idea.
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: How should it work? Why is it useful? Any specific requirements or constraints?
+      placeholder: Expand on the idea with mechanics, flow, or intended behavior.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Gameplay / Mechanics
+        - Systems / Architecture
+        - Level Design
+        - UI / UX
+        - Tools / Editor Utilities
+        - Tech Art / Materials / FX
+        - Audio
+        - AI / Behavior
+        - Other

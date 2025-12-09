@@ -1,0 +1,60 @@
+name: 🐞 Bug Report
+description: Report a bug, crash, or broken behavior in a Lost Minions Games project.
+labels: [bug]
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Description
+      description: What happened, and what did you expect to happen instead?
+      placeholder: Clear and concise description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Launch the game/editor…
+        2. Interact with…
+        3. Observe the issue…
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of the Project
+      description: Which part of the game does this issue affect?
+      options:
+        - Gameplay / Mechanics
+        - Level Design
+        - Blueprints
+        - C++ Code
+        - Animation / Rigging
+        - Materials / Shaders / FX
+        - UI / UX
+        - Tools / Editor Scripts
+        - Build / Packaging
+        - Other
+
+  - type: input
+    id: engine
+    attributes:
+      label: Unreal Engine Version
+      placeholder: e.g. 5.4.3
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Include crash logs, output logs, screenshots, or videos if available.
+      placeholder: Drag-and-drop files or paste snippets here.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other details that might help diagnose the issue.

@@ -1,0 +1,44 @@
+name: 🎨 Design / Art Request
+description: Request or propose a new visual asset: concept art, 3D model, texture, material, VFX, or UI element.
+labels: [design]
+
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Asset Type
+      options:
+        - Concept Art
+        - Character Model
+        - Prop / Environment Model
+        - Material / Shader
+        - Texture / Decal
+        - Animation / Rigging
+        - VFX / Niagara
+        - UI / Icon / HUD
+        - Other
+
+  - type: input
+    id: project
+    attributes:
+      label: Related Project or Level
+      placeholder: e.g. Glitch — Main Hallway, or Glitch — NPC Prototype
+
+  - type: textarea
+    id: concept
+    attributes:
+      label: Concept Description
+      placeholder: Describe the visual idea, style, theme, mood, silhouette, purpose, or mechanics involvement.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links, images, moodboards, sketches, videos, or inspiration sources.
+      placeholder: Drag in files or add URLs.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      placeholder: Any extra details, constraints, polycount targets, shader needs, or animation requirements.

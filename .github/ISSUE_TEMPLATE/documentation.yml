@@ -1,0 +1,22 @@
+name: 📚 Documentation Update
+description: Suggest updates or additions to project documentation, development guides, or README files.
+labels: [documentation]
+
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Description
+      placeholder: Describe the section, doc, or instructions that need updating or adding.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of Change
+      options:
+        - README
+        - Dev Guide / Setup Instructions
+        - Unreal or Coding Guidelines
+        - Asset Pipeline Docs
+        - Gameplay / Design Documentation
+        - Other
