@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="lostminions-github.png" alt="Lost Minions" width="100%" />
-</p>
-
 # 🎮 Lost Minions Games
 
 > **Indie worlds, weird mechanics, and joyful bugs.**  
