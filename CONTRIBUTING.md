@@ -2,10 +2,7 @@
 
 Thank you for helping build **Lost Minions Games**!
 
-This file is shared across multiple repositories under the `LostMinionsGames`
-umbrella: game projects, engine tools, modding helpers, and support libraries.
-Each repo may have its own README or docs with project-specific details — always
-read those first.
+This file is shared across multiple repositories under the `LostMinionsGames` umbrella: game projects, engine tools, modding helpers, and support libraries. Each repo may have its own README or docs with project-specific details — always read those first.
 
 ---
 
@@ -24,8 +21,7 @@ read those first.
   - Logs, stack traces, screenshots, or editor output
 
 - **Docs or workflow updates?**
-  You can usually open a PR directly. If your change affects builds,
-  CI, or shipping behavior, please link or create an issue.
+  You can usually open a PR directly. If your change affects builds, CI, or shipping behavior, please link or create an issue.
 
 ---
 
@@ -61,19 +57,16 @@ For each repo:
 
 3. **Set up your environment**
    - Match the **engine version** and **tooling** listed in the README.
-   - For Unreal/Unity projects, confirm you can build and run a clean clone
-     before making large changes.
+   - For Unreal/Unity projects, confirm you can build and run a clean clone before making large changes.
 
 4. **Make focused, readable commits**
    - Group related changes together.
    - Use clear messages that explain *why* as well as *what*.
-   - If the repo uses commit tags (e.g. `[skip ci]`, `[publish]`, `[publish-zip]`),
-     follow any conventions noted in the README.
+   - If the repo uses commit tags (e.g. `[skip ci]`, `[publish]`, `[publish-zip]`), follow any conventions noted in the README.
 
 5. **Add tests or validation where appropriate**
    - For code libraries: add or update unit/integration tests if present.
-   - For game logic: consider adding automated tests, debug commands, or
-     editor-only helpers when possible.
+   - For game logic: consider adding automated tests, debug commands, or editor-only helpers when possible.
    - For build/packaging scripts: add sanity checks or dry-run options when reasonable.
 
 6. **Open a Pull Request**
@@ -92,11 +85,9 @@ For each repo:
 
 ## ⚖️ Code of Conduct
 
-All contributions must follow the
-[Lost Minions Code of Conduct](./CODE_OF_CONDUCT.md).
+All contributions must follow the [Lost Minions Code of Conduct](./CODE_OF_CONDUCT.md).
 
-We expect respect, patience, and collaboration — whether you’re editing a tiny
-utility function or changing core gameplay systems.
+We expect respect, patience, and collaboration — whether you’re editing a tiny utility function or changing core gameplay systems.
 
 ---
 
@@ -128,5 +119,4 @@ If you’re unsure about:
 
 Open a **“Question”** issue in the relevant repo with as much context as you can.
 
-Lost Minions Games is meant to be a collaborative lab for experiments and games,
-not a puzzle box — it’s always okay to ask before you dive in.
+Lost Minions Games is meant to be a collaborative lab for experiments and games, not a puzzle box — it’s always okay to ask before you dive in.

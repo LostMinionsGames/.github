@@ -54,8 +54,7 @@ Help keep the prototypes running and new worlds in development:
 
 ### 💬 About This Organization
 
-This GitHub organization hosts all official **Lost Minions Games** codebases — 
-including core game projects, shared gameplay systems, and supporting dev tools.
+This GitHub organization hosts all official **Lost Minions Games** codebases — including core game projects, shared gameplay systems, and supporting dev tools.
 
 You’ll find:
 
